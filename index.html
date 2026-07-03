@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Taco Hideout | Made-to-Order Tacos · Galesburg, IL</title>
+  <meta name="description" content="Galesburg's beloved taco hideout since 1964. Shells fried the moment you order, meat fresh off the griddle, and the famous 5-for-$5 taco special. Tucked away on W Berrien St — worth finding." />
+  <meta name="theme-color" content="#7A1220" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:site_name" content="The Taco Hideout" />
+  <meta property="og:title" content="The Taco Hideout — Made-to-Order Tacos · Galesburg, IL" />
+  <meta property="og:description" content="A little taco joint hidden on W Berrien St. Made to order since 1964, the famous 5-for-$5 special, and the one-and-only Taco Burger." />
+  <meta property="og:image" content="https://321david123.github.io/taco-hideout-galesburg/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="1933" />
+  <meta property="og:url" content="https://321david123.github.io/taco-hideout-galesburg/" />
+  <link rel="canonical" href="https://321david123.github.io/taco-hideout-galesburg/" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Taco Hideout — Galesburg, IL" />
+  <meta name="twitter:description" content="Made-to-order tacos since 1964. Find the hideout on W Berrien St." />
+  <meta name="twitter:image" content="https://321david123.github.io/taco-hideout-galesburg/assets/og-image.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet" />
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- If JS is disabled, never leave reveal content hidden -->
+  <noscript><style>
+    .reveal,[data-reveal]{opacity:1!important;transform:none!important}
+  </style></noscript>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "The Taco Hideout",
+    "servesCuisine": "Mexican",
+    "image": "https://321david123.github.io/taco-hideout-galesburg/assets/og-image.jpg",
+    "telephone": "+1-309-343-5610",
+    "priceRange": "$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1256 W Berrien St",
+      "addressLocality": "Galesburg",
+      "addressRegion": "IL",
+      "postalCode": "61401",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday","Thursday","Sunday"], "opens": "17:00", "closes": "22:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "11:00", "closes": "13:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday"], "opens": "17:00", "closes": "23:00" }
+    ],
+    "sameAs": ["https://www.facebook.com/tacohideout"]
+  }
+  </script>
+</head>
+<body>
+  <!-- Skip link -->
+  <a href="#menu" class="skip-link">Skip to menu</a>
+
+  <!-- Grain / noise overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand" aria-label="The Taco Hideout home">
+        <span class="nav__mark" aria-hidden="true">TH</span>
+        <span class="nav__name">Taco Hideout</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#story">Story</a>
+        <a href="#signature">Favorites</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#visit">Find Us</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="tel:+13093435610" class="btn btn--ghost nav__call">(309) 343-5610</a>
+        <a href="#visit" class="btn btn--solid">Find the Hideout</a>
+      </div>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="overlayMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Full-screen overlay menu -->
+  <div class="overlay" id="overlayMenu" aria-hidden="true">
+    <nav class="overlay__nav" aria-label="Mobile">
+      <a href="#story">Story</a>
+      <a href="#signature">Favorites</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#visit">Find Us</a>
+    </nav>
+    <div class="overlay__cta">
+      <a href="tel:+13093435610" class="btn btn--ghost">Call (309) 343-5610</a>
+      <a href="#visit" class="btn btn--solid">Find the Hideout</a>
+    </div>
+  </div>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__media" aria-hidden="true">
+        <img class="hero__img" src="assets/hero.jpg" alt="" fetchpriority="high" decoding="async" />
+        <div class="hero__scrim"></div>
+      </div>
+      <div class="hero__content">
+        <p class="hero__eyebrow">Galesburg, Illinois &bull; Escondido desde 1964</p>
+        <h1 class="hero__title">
+          <span class="hero__script">The&nbsp;Taco&nbsp;Hideout</span>
+          <span class="hero__sub">Made-to-Order Tacos</span>
+        </h1>
+        <p class="hero__tagline">A little taco joint tucked off the main road &mdash; fried to order, worth finding.</p>
+        <div class="hero__actions">
+          <a href="#menu" class="btn btn--solid btn--lg">See the Menu</a>
+          <a href="#visit" class="btn btn--outline btn--lg">Find the Hideout</a>
+        </div>
+        <div class="hero__rating">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <span>96% recommend &bull; "One of the gems of Galesburg"</span>
+        </div>
+      </div>
+      <a href="#story" class="hero__scrollcue" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ STORY ============ -->
+    <section class="story" id="story">
+      <div class="story__wrap">
+        <div class="story__text">
+          <p class="kicker"><span class="kicker__line"></span>Nuestra Historia</p>
+          <h2 class="story__title">The worst-kept secret in Galesburg.</h2>
+          <p data-i18n>You have to know your way around town to find us &mdash; a little converted house on W Berrien St, no flashy sign, flowers out front. That's the whole charm. For decades, <em>Jack and the crew</em> have quietly fed the locals, and folks keep coming back the way they always have.</p>
+          <p>Everything is <em>made the moment you order it</em>. The shells aren't sitting in a warmer &mdash; they're a plain tortilla until your ticket comes in, then they hit the fryer. The meat is cooked fresh about every half hour. Same way it's been done since 1964.</p>
+          <a href="#signature" class="link-underline">Meet the favorites &rarr;</a>
+          <div class="story__stats">
+            <div class="stat">
+              <span class="stat__num" data-count="1964">0</span>
+              <span class="stat__label">Serving since</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="5" data-prefix="$" data-decimals="2" data-raw="5.99">0</span>
+              <span class="stat__label">Five tacos, one deal</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="96" data-suffix="%">0</span>
+              <span class="stat__label">Recommend it</span>
+            </div>
+          </div>
+        </div>
+        <div class="story__media">
+          <img src="assets/patio.jpg" alt="The Taco Hideout's flower-lined outdoor seating on a summer evening" loading="lazy" decoding="async" width="600" height="450" />
+          <div class="story__badge">
+            <span class="story__badge-script">Since '64</span>
+            <span class="story__badge-sub">Familia &amp; Sabor</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SIGNATURE ============ -->
+    <section class="sig" id="signature">
+      <div class="sig__head">
+        <p class="kicker kicker--center"><span class="kicker__line"></span>Lo Mejor de la Casa<span class="kicker__line"></span></p>
+        <h2 class="section-title">What the regulars order</h2>
+      </div>
+
+      <article class="sig__row">
+        <div class="sig__img reveal-img">
+          <img src="assets/tacos-street.jpg" alt="Five made-to-order tacos with seasoned beef, lettuce, tomato and cheese" loading="lazy" decoding="async" width="500" height="600" />
+        </div>
+        <div class="sig__copy">
+          <span class="sig__index">01</span>
+          <h3 class="sig__name">The 5-for-$5 Special</h3>
+          <p>Five tacos or five enchiladas, a steal of a deal that's fed Galesburg for generations. Hard, soft, or super-soft &mdash; every shell fried the second you order. This is why people drive across town.</p>
+          <span class="sig__price">Taco or Enchilada Special &bull; 5 for $5.09</span>
+          <a href="#menu" class="link-underline sig__link">See the specials &rarr;</a>
+        </div>
+      </article>
+
+      <article class="sig__row sig__row--rev">
+        <div class="sig__img reveal-img">
+          <img src="assets/taco-burger.jpg" alt="The famous Taco Burger — seasoned beef, lettuce, tomato and cheese served on a bun" loading="lazy" decoding="async" width="500" height="600" />
+        </div>
+        <div class="sig__copy">
+          <span class="sig__index">02</span>
+          <h3 class="sig__name">The Taco Burger</h3>
+          <p>The one people ask about. Call it a bun taco if you like &mdash; seasoned beef, lettuce, tomato and cheese, all piled on a hamburger bun instead of a shell. A Hideout original you won't find just anywhere.</p>
+          <span class="sig__price">$1.95 each</span>
+          <a href="#menu" class="link-underline sig__link">On the menu &rarr;</a>
+        </div>
+      </article>
+
+      <article class="sig__row">
+        <div class="sig__img reveal-img">
+          <img src="assets/salsa.jpg" alt="A bowl of homemade salsa with warm tortilla chips" loading="lazy" decoding="async" width="500" height="600" />
+        </div>
+        <div class="sig__copy">
+          <span class="sig__index">03</span>
+          <h3 class="sig__name">Homemade Salsa &amp; Chips</h3>
+          <p>The little things that keep the place a legend. Our beans &amp; chips come loaded with seasoned beef and cheese, and the salsa is made in-house &mdash; simple, fresh, and exactly right.</p>
+          <span class="sig__price">Beans &amp; Chips &bull; $3.50</span>
+          <a href="#menu" class="link-underline sig__link">Start here &rarr;</a>
+        </div>
+      </article>
+
+      <article class="sig__row sig__row--rev">
+        <div class="sig__img reveal-img">
+          <img src="assets/enchiladas.jpg" alt="A rib dinner with pork ribs, beans, cheese and warm flour tortillas" loading="lazy" decoding="async" width="500" height="600" />
+        </div>
+        <div class="sig__copy">
+          <span class="sig__index">04</span>
+          <h3 class="sig__name">The Rib Dinner</h3>
+          <p>When Jack runs a batch of pork ribs, word gets out and they go fast. Served with beans, cheese and two warm flour tortillas &mdash; the special the regulars hope to catch on the right night.</p>
+          <span class="sig__price">$6.25 &bull; while they last</span>
+          <a href="#visit" class="link-underline sig__link">Call ahead &rarr;</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- ============ BANNER ============ -->
+    <section class="banner" aria-label="How we cook">
+      <div class="banner__inner">
+        <span class="banner__script">Hecho al momento</span>
+        <h2 class="banner__title">Nothing sits in a warmer.</h2>
+        <p data-i18n>Your shell is a tortilla until your ticket lands &mdash; then it hits the fryer. Meat cooked fresh about every <strong>30 minutes.</strong></p>
+      </div>
+    </section>
+
+    <!-- ============ FULL MENU ============ -->
+    <section class="menu" id="menu">
+      <div class="menu__head">
+        <p class="kicker kicker--center"><span class="kicker__line"></span>El Menú<span class="kicker__line"></span></p>
+        <h2 class="section-title">The full menu</h2>
+        <p class="menu__note">Honest, made-to-order, and just about everything under seven bucks. Tap a category to explore.</p>
+      </div>
+
+      <div class="menu__tabs" id="menuTabs" role="tablist" aria-label="Menu categories"></div>
+      <div class="menu__panels" id="menuPanels"></div>
+
+      <div class="menu__cta">
+        <a href="tel:+13093435610" class="btn btn--solid btn--lg">Call to Order</a>
+        <a href="#visit" class="btn btn--outline btn--lg">Find the Hideout</a>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="gallery" id="gallery">
+      <div class="menu__head">
+        <p class="kicker kicker--center"><span class="kicker__line"></span>La Galería<span class="kicker__line"></span></p>
+        <h2 class="section-title">Around the Hideout</h2>
+      </div>
+      <div class="swiper gallery__swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide gallery__slide"><img src="assets/tacos-street.jpg" alt="Made-to-order tacos lined up" loading="lazy" decoding="async" /></div>
+          <div class="swiper-slide gallery__slide"><img src="assets/salsa.jpg" alt="Homemade salsa and chips" loading="lazy" decoding="async" /></div>
+          <div class="swiper-slide gallery__slide"><img src="assets/kitchen.jpg" alt="Shells frying to order on the griddle" loading="lazy" decoding="async" /></div>
+          <div class="swiper-slide gallery__slide"><img src="assets/taco-burger.jpg" alt="The Hideout's signature Taco Burger" loading="lazy" decoding="async" /></div>
+          <div class="swiper-slide gallery__slide"><img src="assets/enchiladas.jpg" alt="A saucy plate of enchiladas" loading="lazy" decoding="async" /></div>
+          <div class="swiper-slide gallery__slide"><img src="assets/spread.jpg" alt="Fresh ingredients and limes" loading="lazy" decoding="async" /></div>
+          <div class="swiper-slide gallery__slide"><img src="assets/patio.jpg" alt="Flower-lined outdoor seating" loading="lazy" decoding="async" /></div>
+          <div class="swiper-slide gallery__slide"><img src="assets/hero.jpg" alt="A spread of tacos on a rustic table" loading="lazy" decoding="async" /></div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="features" aria-label="Why the Hideout">
+      <div class="features__head">
+        <p class="kicker kicker--center"><span class="kicker__line"></span>Por qué el Hideout<span class="kicker__line"></span></p>
+        <h2 class="section-title">Why locals keep it a secret</h2>
+      </div>
+      <div class="features__grid">
+        <div class="feature">
+          <svg class="feature__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14a8 8 0 0 1 16 0M3 14h18l-1.5 4.5a1.5 1.5 0 0 1-1.4 1H5.9a1.5 1.5 0 0 1-1.4-1L3 14zM12 6V3"/></svg>
+          <h3>Made to Order</h3>
+          <p>Shells fried the moment your ticket comes in &mdash; never pre-made, never sitting.</p>
+        </div>
+        <div class="feature">
+          <svg class="feature__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg>
+          <h3>Under $7</h3>
+          <p>You can eat like a king for pocket change. Almost every plate is under seven dollars.</p>
+        </div>
+        <div class="feature">
+          <svg class="feature__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21c5-3 8-6.5 8-11a4 4 0 0 0-8-1 4 4 0 0 0-8 1c0 4.5 3 8 8 11z"/><path d="M12 9v8"/></svg>
+          <h3>Family-Owned</h3>
+          <p>Jack and the crew have been feeding Galesburg for decades, one ticket at a time.</p>
+        </div>
+        <div class="feature">
+          <svg class="feature__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 4h3l1.4 4-2 1.4a11 11 0 0 0 5.2 5.2l1.4-2 4 1.4v3a2 2 0 0 1-2.2 2A16 16 0 0 1 4.5 6.2 2 2 0 0 1 6.5 4z"/></svg>
+          <h3>Call Ahead</h3>
+          <p>Ring (309) 343-5610 and have your favorites ready to grab and go.</p>
+        </div>
+        <div class="feature">
+          <svg class="feature__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 16.5 7.1 18.2l.9-5.5-4-3.9L9.5 8z"/></svg>
+          <h3>Homemade Salsa</h3>
+          <p>Made in-house, the way it's always been. The little things that keep the legend going.</p>
+        </div>
+        <div class="feature">
+          <svg class="feature__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M5 20V9l7-5 7 5v11M9 20v-5h6v5"/></svg>
+          <h3>Patio &amp; Flowers</h3>
+          <p>Grab a seat outside among the flowers and music &mdash; the best-kept table in town.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section class="reviews" id="reviews">
+      <div class="menu__head">
+        <p class="kicker kicker--center kicker--light"><span class="kicker__line"></span>Lo que dicen<span class="kicker__line"></span></p>
+        <h2 class="section-title section-title--light">A local legend</h2>
+      </div>
+      <div class="swiper reviews__swiper">
+        <div class="swiper-wrapper" id="reviewsWrapper"></div>
+        <div class="swiper-pagination reviews__pag"></div>
+      </div>
+    </section>
+
+    <!-- ============ VISIT ============ -->
+    <section class="visit" id="visit">
+      <div class="visit__grid">
+        <div class="visit__info">
+          <p class="kicker"><span class="kicker__line"></span>Visítanos</p>
+          <h2 class="section-title">Find the Hideout</h2>
+          <p class="visit__lead">Tucked away on W Berrien St &mdash; a converted little house with flowers out front. If you know, you know.</p>
+          <div class="visit__block">
+            <h3>Address</h3>
+            <p><a href="https://www.google.com/maps?q=Taco+Hideout,+1256+W+Berrien+St,+Galesburg,+IL+61401" target="_blank" rel="noopener">1256 W Berrien St<br />Galesburg, IL 61401</a></p>
+          </div>
+          <div class="visit__block">
+            <h3>Phone</h3>
+            <p><a href="tel:+13093435610">(309) 343-5610</a></p>
+          </div>
+          <div class="visit__block">
+            <h3>Hours</h3>
+            <table class="hours">
+              <tbody>
+                <tr><th scope="row">Mon &ndash; Tue</th><td>Closed</td></tr>
+                <tr><th scope="row">Wed &ndash; Thu</th><td>5:00 &ndash; 10:00 PM</td></tr>
+                <tr><th scope="row">Friday</th><td>11a&ndash;1:30p &bull; 5&ndash;11p</td></tr>
+                <tr><th scope="row">Saturday</th><td>5:00 &ndash; 11:00 PM</td></tr>
+                <tr><th scope="row">Sunday</th><td>5:00 &ndash; 10:00 PM</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="visit__actions">
+            <a href="tel:+13093435610" class="btn btn--solid">Call Us</a>
+            <a href="https://www.facebook.com/tacohideout" target="_blank" rel="noopener" class="btn btn--outline">Facebook</a>
+          </div>
+        </div>
+        <div class="visit__map">
+          <iframe
+            title="Map to The Taco Hideout, Galesburg IL"
+            src="https://www.google.com/maps?q=1256+W+Berrien+St,+Galesburg,+IL+61401&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <span class="nav__mark" aria-hidden="true">TH</span>
+        <span class="footer__script">Taco Hideout</span>
+        <p class="footer__tag">Made-to-order tacos, tucked off the main road since 1964.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Find Us</h4>
+        <p>1256 W Berrien St<br />Galesburg, IL 61401</p>
+        <p><a href="tel:+13093435610">(309) 343-5610</a></p>
+      </div>
+      <div class="footer__col">
+        <h4>Hours</h4>
+        <p>Mon–Tue Closed<br />Wed–Thu 5–10p<br />Fri 11a–1:30p &amp; 5–11p<br />Sat 5–11p · Sun 5–10p</p>
+      </div>
+      <div class="footer__col">
+        <h4>Follow</h4>
+        <ul class="footer__links">
+          <li><a href="https://www.facebook.com/tacohideout" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="tel:+13093435610">Call to Order</a></li>
+          <li><a href="https://www.google.com/maps?q=Taco+Hideout,+1256+W+Berrien+St,+Galesburg,+IL+61401" target="_blank" rel="noopener">Get Directions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <p>&copy; <span id="year">2026</span> The Taco Hideout. All rights reserved.</p>
+      <p>Galesburg, Illinois</p>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile action bar -->
+  <div class="actionbar" aria-label="Quick actions">
+    <a href="tel:+13093435610" class="actionbar__btn"><svg class="actionbar__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 4h3l1.4 4-2 1.4a11 11 0 0 0 5.2 5.2l1.4-2 4 1.4v3a2 2 0 0 1-2.2 2A16 16 0 0 1 4.5 6.2 2 2 0 0 1 6.5 4z"/></svg>Call</a>
+    <a href="#menu" class="actionbar__btn actionbar__btn--primary"><svg class="actionbar__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14a8 8 0 0 1 16 0M3 14h18l-1.5 4.5a1.5 1.5 0 0 1-1.4 1H5.9a1.5 1.5 0 0 1-1.4-1L3 14z"/></svg>Menu</a>
+    <a href="https://www.google.com/maps?q=Taco+Hideout,+1256+W+Berrien+St,+Galesburg,+IL+61401" target="_blank" rel="noopener" class="actionbar__btn"><svg class="actionbar__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 0 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Map</a>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+  <script>/* visibility failsafe: show content even if GSAP/IO is delayed/blocked/throttled */setTimeout(function(){document.querySelectorAll(".reveal,[data-reveal]").forEach(function(e){e.classList.add("is-in")});document.querySelectorAll("[data-hero-line],.hero__title .line>span,.hero__line").forEach(function(e){e.style.opacity="1";e.style.transform="none";e.style.visibility="visible"});document.querySelectorAll(".stat__num[data-count]").forEach(function(e){if(e.textContent==="0"||e.textContent===""){var t=parseFloat(e.dataset.count),d=parseInt(e.dataset.decimals||"0",10),s=e.dataset.suffix||"",p=e.dataset.prefix||"",r=e.dataset.raw?parseFloat(e.dataset.raw):null,f=r!==null?r:t;e.textContent=p+(d>0?f.toFixed(d):Math.round(f).toString())+s;}})},2600);</script>
+</body>
+</html>
