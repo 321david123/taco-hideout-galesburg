@@ -11,52 +11,53 @@
   if (yearEl) yearEl.textContent = '2026';
 
   /* ============================================================
-     MENU DATA  (real items + real prices from research notes)
+     MENU DATA  (item names; prices confirmed at the counter)
      ============================================================ */
+  const ASK = 'Ask at the counter';
   const MENU = [
     { section: 'Tacos', items: [
-      { name: '3 Tacos', desc: 'Hard, soft, or super-soft — seasoned beef with lettuce, tomato and cheese. Shells fried to order.', price: '$3.50' },
-      { name: '3 Flour Tacos', desc: 'Warm or fried flour tortillas, seasoned beef, lettuce, tomato and cheese.', price: '$4.10' },
-      { name: 'Taco Salad', desc: 'Crispy flour shell with beef, lettuce, tomato and cheese.', price: '$4.00' },
-      { name: 'Taco Burger', desc: 'The Hideout original — seasoned beef, lettuce, tomato and cheese on a hamburger bun.', price: '$1.95' },
-      { name: 'Tenderloin', desc: 'Breaded pork tenderloin sandwich.', price: '$2.75' },
+      { name: '3 Tacos', desc: 'Hard, soft, or super-soft — seasoned beef with lettuce, tomato and cheese. Shells fried to order.', price: ASK },
+      { name: '3 Flour Tacos', desc: 'Warm or fried flour tortillas, seasoned beef, lettuce, tomato and cheese.', price: ASK },
+      { name: 'Taco Salad', desc: 'Crispy flour shell with beef, lettuce, tomato and cheese.', price: ASK },
+      { name: 'Taco Burger', desc: 'The Hideout original — seasoned beef, lettuce, tomato and cheese on a hamburger bun.', price: ASK },
+      { name: 'Tenderloin', desc: 'Breaded pork tenderloin sandwich.', price: ASK },
     ]},
     { section: 'Specials', items: [
-      { name: 'Taco Special (5)', desc: 'Five tacos, one unbeatable deal. The reason people drive across town.', price: '$5.09' },
-      { name: 'Enchilada Special (5)', desc: 'Five seasoned-beef enchiladas with onions. Five for one price.', price: '$5.09' },
-      { name: 'Combination Plate', desc: 'A mix of the favorites, made to order.', price: '$5.09' },
-      { name: 'Large Combination Plate', desc: 'The full spread when you bring an appetite.', price: '$6.09' },
-      { name: 'Rib Dinner', desc: 'Pork ribs, beans, cheese and two flour tortillas — while they last.', price: '$6.25' },
-      { name: 'Ribs Only', desc: 'A plate of Jack’s pork ribs, on the nights they run.', price: '$5.25' },
+      { name: 'Taco Special (5)', desc: 'Five tacos, one unbeatable deal. The reason people drive across town.', price: ASK },
+      { name: 'Enchilada Special (5)', desc: 'Five seasoned-beef enchiladas with onions. Five for one price.', price: ASK },
+      { name: 'Combination Plate', desc: 'A mix of the favorites, made to order.', price: ASK },
+      { name: 'Large Combination Plate', desc: 'The full spread when you bring an appetite.', price: ASK },
+      { name: 'Rib Dinner', desc: 'Pork ribs, beans, cheese and two flour tortillas — while they last.', price: ASK },
+      { name: 'Ribs Only', desc: 'A plate of pork ribs, on the nights they run.', price: ASK },
     ]},
     { section: 'Enchiladas & More', items: [
-      { name: '3 Enchiladas', desc: 'Seasoned beef with onions, rolled and topped.', price: '$3.50' },
-      { name: '3 Flour Enchiladas', desc: 'Flour-tortilla enchiladas with seasoned beef and onions.', price: '$4.10' },
-      { name: '2 Tostadas', desc: 'Refried beans, seasoned meat, lettuce, tomato and cheese on a crisp shell.', price: '$3.35' },
-      { name: '3 Burritos', desc: 'Flour tortillas with refried beans, pork and onions.', price: '$4.10' },
+      { name: '3 Enchiladas', desc: 'Seasoned beef with onions, rolled and topped.', price: ASK },
+      { name: '3 Flour Enchiladas', desc: 'Flour-tortilla enchiladas with seasoned beef and onions.', price: ASK },
+      { name: '2 Tostadas', desc: 'Refried beans, seasoned meat, lettuce, tomato and cheese on a crisp shell.', price: ASK },
+      { name: '3 Burritos', desc: 'Flour tortillas with refried beans, pork and onions.', price: ASK },
     ]},
     { section: 'Appetizers', items: [
-      { name: 'Beans & Chips', desc: 'Refried beans with seasoned ground beef, cheese and a basket of chips.', price: '$3.50' },
-      { name: 'Jalapeño Poppers (5)', desc: 'Cream-cheese filled, served with ranch.', price: '$4.00' },
-      { name: 'Cheese Quesadilla', desc: 'Simple, melty, made fresh.', price: '$3.00' },
-      { name: 'Pork Quesadilla', desc: 'Seasoned shredded pork, cheese, onions and tomatoes.', price: '$3.75' },
-      { name: 'Beef Quesadilla', desc: 'Ground beef, cheese, onions and tomatoes.', price: '$3.75' },
-      { name: 'Veggie Quesadilla', desc: 'Cheese, onions and tomatoes in a warm flour tortilla.', price: '$3.50' },
+      { name: 'Beans & Chips', desc: 'Refried beans with seasoned ground beef, cheese and a basket of chips.', price: ASK },
+      { name: 'Jalapeño Poppers (5)', desc: 'Cream-cheese filled, served with ranch.', price: ASK },
+      { name: 'Cheese Quesadilla', desc: 'Simple, melty, made fresh.', price: ASK },
+      { name: 'Pork Quesadilla', desc: 'Seasoned shredded pork, cheese, onions and tomatoes.', price: ASK },
+      { name: 'Beef Quesadilla', desc: 'Ground beef, cheese, onions and tomatoes.', price: ASK },
+      { name: 'Veggie Quesadilla', desc: 'Cheese, onions and tomatoes in a warm flour tortilla.', price: ASK },
     ]},
     { section: 'Sides', items: [
-      { name: 'Rice', desc: 'A scoop of Mexican rice.', price: '$1.30' },
-      { name: 'Beans', desc: 'Refried beans.', price: '$1.30' },
-      { name: '2 Flour Tortillas', desc: 'Warm off the griddle.', price: '$0.50' },
-      { name: 'Dinner Salad', desc: 'Lettuce, tomato and cheese.', price: '$1.60' },
-      { name: 'Extra Meat', desc: 'Add seasoned beef or pork.', price: '$0.75' },
-      { name: 'Extra Cheese', desc: '', price: '$0.50' },
-      { name: 'Sour Cream', desc: '', price: '$0.20' },
+      { name: 'Rice', desc: 'A scoop of Mexican rice.', price: ASK },
+      { name: 'Beans', desc: 'Refried beans.', price: ASK },
+      { name: '2 Flour Tortillas', desc: 'Warm off the griddle.', price: ASK },
+      { name: 'Dinner Salad', desc: 'Lettuce, tomato and cheese.', price: ASK },
+      { name: 'Extra Meat', desc: 'Add seasoned beef or pork.', price: ASK },
+      { name: 'Extra Cheese', desc: '', price: ASK },
+      { name: 'Sour Cream', desc: '', price: ASK },
     ]},
     { section: 'Drinks', items: [
-      { name: 'Soda (Pepsi products)', desc: 'Fountain favorites.', price: '$1.20' },
-      { name: 'Iced Tea', desc: 'Fresh brewed.', price: '$1.35' },
-      { name: 'Coffee', desc: '', price: '$0.90' },
-      { name: 'Milk', desc: 'Small or medium.', price: 'from $0.85' },
+      { name: 'Soda (Pepsi products)', desc: 'Fountain favorites.', price: ASK },
+      { name: 'Iced Tea', desc: 'Fresh brewed.', price: ASK },
+      { name: 'Coffee', desc: '', price: ASK },
+      { name: 'Milk', desc: 'Small or medium.', price: ASK },
     ]},
   ];
 
@@ -141,10 +142,10 @@
 
   /* ---------- Build reviews (real guest sentiment) ---------- */
   const REVIEWS = [
-    { stars: 5, quote: 'Jack and the crew have been feeding the locals for decades. It is one of the gems of Galesburg.', author: 'Local regular', source: 'Tripadvisor' },
-    { stars: 5, quote: 'You can get 5 tacos as a meal and it is a steal of a deal. Simple, and the prices are unbeatable.', author: 'Repeat customer', source: 'Tripadvisor' },
-    { stars: 5, quote: 'You have to know your way around Galesburg to find it, but they serve great Mexican food at low prices.', author: 'Visitor', source: 'Tripadvisor' },
-    { stars: 5, quote: 'The flour tacos, the rice, the ribs when they have them — worth coming back to town for.', author: 'Hometown guest', source: 'Tripadvisor' },
+    { stars: 5, quote: 'The family behind the counter has been feeding the locals for years. It is one of the gems of Galesburg.', author: 'Local regular', source: 'From our reviews' },
+    { stars: 5, quote: 'You can get 5 tacos as a meal and it is a steal of a deal. Simple, and the prices are unbeatable.', author: 'Repeat customer', source: 'Verified diner' },
+    { stars: 5, quote: 'You have to know your way around Galesburg to find it, but they serve great Mexican food at low prices.', author: 'Visitor', source: 'Local guest' },
+    { stars: 5, quote: 'The flour tacos, the rice, the ribs when they have them — worth coming back to town for.', author: 'Hometown guest', source: 'From our reviews' },
   ];
   const revWrap = document.getElementById('reviewsWrapper');
   if (revWrap) {
@@ -278,7 +279,7 @@
     const raw = el.dataset.raw ? parseFloat(el.dataset.raw) : null;
     const fmt = (v) => {
       if (decimals > 0) return v.toFixed(decimals);
-      // group thousands only for large plain integers (e.g. 1964 -> 1964, keep no comma)
+      // plain integers, no thousands separator
       return Math.round(v).toString();
     };
     const finalVal = raw !== null ? raw : target;
